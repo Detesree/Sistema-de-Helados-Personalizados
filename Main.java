@@ -5,13 +5,13 @@ public class Main {
         Helado heladoSimple = new HeladoBase("Vainilla");
         System.out.println(heladoSimple.getDescripcion() + " - $" + heladoSimple.getCosto());
 
-        // Helado decorado con dos toppings
+        // Helado decorado fresa
         Helado heladoConCarameloYCrema = new CremaBatida(
                 new SalsaCaramelo(
                         new HeladoBase("Fresa")));
         System.out.println(heladoConCarameloYCrema.getDescripcion() + " - $" + heladoConCarameloYCrema.getCosto());
 
-        // Helado con varios toppings
+        // Helado con galletas
         Helado heladoCompleto = new Galleta(
                 new ChispasChocolate(
                         new Frutas(
